@@ -28,6 +28,7 @@ app.use('/users', usersRouter);
 
 const environment = app.get('env');
 console.log('environment: ' + environment);
+
 //check if in production 
 if(process.env.NODE_ENV === 'production'){
     //set the static folder
