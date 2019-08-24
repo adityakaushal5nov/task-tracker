@@ -20,7 +20,7 @@
     "server": "cd backend && nodemon server.js",
     "client": "cd src && npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd src && npm install && npm run build && cd .. && cd backend && nodemon server.js"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd src && npm install && npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
